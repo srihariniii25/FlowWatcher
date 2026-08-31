@@ -1,14 +1,14 @@
 ---
-title: FlowMeter QuickStart
+title: 'Deepfence Flowwatcher QuickStart'
 ---
 
 # Quick Start
 
-![FlowMeter Demo](img/flowmeter.svg)
+![Deepfence Flowwatcher Demo](img/flowmeter.svg)
 
-## Build FlowMeter
+## Build Deepfence Flowwatcher
 
-Build FlowMeter from source using the golang toolchain.
+Build Deepfence Flowwatcher from source using the golang toolchain.
 
 ```bash
 git clone https://github.com/deepfence/FlowMeter.git
@@ -54,10 +54,10 @@ cd ../pkg/
 
 ## Sample Results
 
-FlowMeter gives a rich set of features about flows from packet data, and classifies packets as benign or malicious.
+Deepfence Flowwatcher gives a rich set of features about flows from packet data, and classifies packets as benign or malicious.
 
-| ![FlowMeter Results](img/flowmeter-results-anim.gif) |
+| ![Deepfence Flowwatcher Results](img/flowmeter-results-anim.gif) |
 | :--: |
-| *FlowMeter takes packets and returns file with statistics of flows.* |
+| *Deepfence Flowwatcher takes packets and returns file with statistics of flows.* |
 
 

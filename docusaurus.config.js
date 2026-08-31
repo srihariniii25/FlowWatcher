@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Deepfence FlowMeter',
+  title: 'Deepfence Flowwatcher',
   tagline: 'Use ML to classify flows and packets as benign or malicious',
   url: 'https://flowmeter.local',
   baseUrl: '/',
@@ -62,7 +62,7 @@ const config = {
           {
             type: 'doc',
             docId: 'flowmeter/index',
-            label: 'FlowMeter Documentation',
+            label: 'Deepfence Flowwatcher Documentation',
           },
           { 
             to: 'https://deepfence.io/',

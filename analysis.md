@@ -4,7 +4,7 @@ title: Analysis
 
 # Data Analysis
 
-FlowMeter observes the following features from packets and constructs flows. 
+Deepfence Flowwatcher observes the following features from packets and constructs flows.
 
 * **Inter-arrival time**
 
@@ -43,18 +43,18 @@ FlowMeter observes the following features from packets and constructs flows.
 
     * Total flow duration
 
-With these observed features, FlowMeter can robustly differentiate between malicious and benign flows. 
+With these observed features, Deepfence Flowwatcher can robustly differentiate between malicious and benign flows.
 
 ## Examples
 
-The following examples illustrate how FlowMeter can differentiate between benign and malicious traffic, based on the above metrics:
+The following examples illustrate how Deepfence Flowwatcher can differentiate between benign and malicious traffic, based on the above metrics:
 
-| ![FlowMeter fwdPacketSizeMax](../img/analyse-size.png) | ![FlowMeter fwdPacketSizeTotal](../img/analyse-length.png) |
+| ![Deepfence Flowwatcher fwdPacketSizeMax](../img/analyse-size.png) | ![Deepfence Flowwatcher fwdPacketSizeTotal](../img/analyse-length.png) |
 | :--: | :--: |
 | *Profiles of maximum of **forward packet sizes** shows clear distinction in benign and malicious flow data.* | *Profiles of maximum of **forward flow lengths** shows clear distinction in benign and malicious flow data.* |
 
 
-| ![FlowMeter fwdIATMean](../img/analyse-forward-time.png) | ![FlowMeter bwdIATMean](../img/analyse-backward-time.png) |
+| ![Deepfence Flowwatcher fwdIATMean](../img/analyse-forward-time.png) | ![Deepfence Flowwatcher bwdIATMean](../img/analyse-backward-time.png) |
 | :--: | :--: |
 | *Profiles of **forward inter-arrival time mean** shows clear distinction between benign and malicious flow data.* | *Profiles of **backward inter-arrival time mean** shows clear distinction between benign and malicious flow data.* |
 
