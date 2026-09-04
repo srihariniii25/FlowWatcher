@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2048" height="900" viewBox="0 0 2048 900" role="img" aria-labelledby="title desc">
+  <title id="title">Deepfence Flowwatcher architecture</title>
+  <desc id="desc">A distributed flow processing architecture showing real-time traffic intake, flow enrichment, query engine, backend console, and a management system with optional ML.</desc>
+  <defs>
+    <style>
+      .title { font: 700 54px 'DejaVu Sans', Arial, sans-serif; fill: #1f2933; }
+      .subtitle { font: italic 400 36px 'DejaVu Sans', Arial, sans-serif; fill: #1f2933; }
+      .label { font: 500 36px 'DejaVu Sans', Arial, sans-serif; fill: #1f2933; }
+      .small { font: 400 30px 'DejaVu Sans', Arial, sans-serif; fill: #1f2933; }
+      .dark { font: 700 34px 'DejaVu Sans', Arial, sans-serif; fill: #e7edf4; }
+      .darkSmall { font: 400 26px 'DejaVu Sans', Arial, sans-serif; fill: #e7edf4; }
+      .lightBoxText { font: 700 38px 'DejaVu Sans', Arial, sans-serif; fill: #ffffff; }
+      .lightBoxTextSmall { font: 400 28px 'DejaVu Sans', Arial, sans-serif; fill: #ffffff; }
+      .arrow { stroke: #1c1c1c; stroke-width: 5; fill: none; marker-end: url(#arrowhead); }
+      .connector { stroke: #1c1c1c; stroke-width: 4; fill: none; }
+      .db-outline { fill: #d9e8ef; stroke: #1d4f73; stroke-width: 5; }
+      .box { fill: #7e98b2; stroke: #1d4f73; stroke-width: 4; }
+      .dark-panel { fill: #2d4053; stroke: #1d4f73; stroke-width: 4; }
+      .light-panel { fill: #dfe6ea; stroke: #1d4f73; stroke-width: 4; }
+      .console-panel { fill: #d9e3eb; stroke: #1d4f73; stroke-width: 4; }
+      .db-body { fill: #d9e8ef; stroke: #1d4f73; stroke-width: 5; }
+      .db-rim { fill: none; stroke: #1d4f73; stroke-width: 5; }
+      .badge { fill: #d9e6ee; stroke: #1d4f73; stroke-width: 4; }
+    </style>
+    <marker id="arrowhead" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#1c1c1c"/>
+    </marker>
+  </defs>
+
+  <rect width="2048" height="900" fill="#f1f1f1"/>
+
+  <rect x="310" y="40" width="1430" height="240" rx="0" class="db-outline"/>
+  <text x="1024" y="130" text-anchor="middle" class="title">Deepfence Flowwatcher</text>
+  <text x="1024" y="190" text-anchor="middle" class="subtitle">Continuous Threat &amp; Traffic Analysis</text>
+
+  <g>
+    <path d="M 110 320 L 110 570 Q 110 620 170 620 L 240 620 Q 300 620 300 570 L 300 320 Q 300 270 240 270 L 170 270 Q 110 270 110 320 Z" class="db-body"/>
+    <path d="M 170 270 Q 240 270 240 270 L 240 620 Q 170 620 170 620" class="db-rim"/>
+    <path d="M 180 270 Q 220 270 240 270" class="db-rim"/>
+    <path d="M 180 620 Q 220 620 240 620" class="db-rim"/>
+    <path d="M 110 330 Q 170 350 240 330" fill="none" stroke="#1d4f73" stroke-width="5"/>
+    <path d="M 110 335 Q 170 370 240 335" fill="none" stroke="#1d4f73" stroke-width="5"/>
+    <path d="M 110 342 Q 170 392 240 342" fill="none" stroke="#1d4f73" stroke-width="5"/>
+    <path d="M 110 348 Q 170 410 240 348" fill="none" stroke="#1d4f73" stroke-width="5"/>
+    <path d="M 110 520 Q 170 560 240 520" fill="none" stroke="#1d4f73" stroke-width="5"/>
+  </g>
+
+  <path d="M 310 420 L 520 420" class="arrow"/>
+
+  <rect x="520" y="280" width="310" height="280" class="box"/>
+  <text x="675" y="345" text-anchor="middle" class="lightBoxText">Flow Ingestion &amp;</text>
+  <text x="675" y="395" text-anchor="middle" class="lightBoxText">Enrichment (eBPF)</text>
+
+  <rect x="820" y="330" width="415" height="225" class="db-outline"/>
+  <path d="M 955 330 L 955 555" stroke="#1d4f73" stroke-width="5"/>
+  <path d="M 955 330 Q 1100 330 1100 330" stroke="#1d4f73" stroke-width="5" fill="none"/>
+  <path d="M 955 555 Q 1100 555 1100 555" stroke="#1d4f73" stroke-width="5" fill="none"/>
+  <path d="M 880 300 L 1000 300 Q 1110 300 1110 335 L 1110 550 Q 1110 585 1000 585 L 880 585 Q 770 585 770 550 L 770 335 Q 770 300 880 300 Z" fill="#d9e8ef" stroke="#1d4f73" stroke-width="5"/>
+  <path d="M 770 335 Q 880 350 1000 335" fill="none" stroke="#1d4f73" stroke-width="5"/>
+  <path d="M 770 555 Q 880 570 1000 555" fill="none" stroke="#1d4f73" stroke-width="5"/>
+  <text x="935" y="395" text-anchor="middle" class="label">Structured Flow</text>
+  <text x="935" y="445" text-anchor="middle" class="label">Database</text>
+  <text x="935" y="495" text-anchor="middle" class="label">(SQL-like)</text>
+
+  <path d="M 1235 420 L 1465 420" class="arrow"/>
+
+  <rect x="1465" y="280" width="380" height="280" class="box"/>
+  <text x="1655" y="345" text-anchor="middle" class="lightBoxText">Query Engine &amp; Rules</text>
+  <text x="1655" y="395" text-anchor="middle" class="lightBoxText">(Threat Intelligence)</text>
+
+  <path d="M 1845 420 L 2010 420" class="arrow"/>
+
+  <rect x="1765" y="295" width="260" height="260" class="console-panel"/>
+  <text x="1895" y="380" text-anchor="middle" class="label">Deepfence Console /</text>
+  <text x="1895" y="430" text-anchor="middle" class="label">Backend</text>
+
+  <g>
+    <path d="M 1705 680 L 1705 780 Q 1705 830 1765 830 L 1945 830 Q 2005 830 2005 780 L 2005 680 Q 2005 630 1945 630 L 1765 630 Q 1705 630 1705 680 Z" class="db-body"/>
+    <path d="M 1765 630 Q 1830 630 1945 630" class="db-rim"/>
+    <path d="M 1765 830 Q 1830 830 1945 830" class="db-rim"/>
+    <path d="M 1705 695 Q 1760 710 1830 695" fill="none" stroke="#1d4f73" stroke-width="5"/>
+    <path d="M 1705 705 Q 1760 732 1830 705" fill="none" stroke="#1d4f73" stroke-width="5"/>
+  </g>
+
+  <text x="170" y="710" class="label" text-anchor="middle">Real-time Traffic</text>
+  <text x="170" y="760" class="label" text-anchor="middle">(e.g.,</text>
+  <text x="170" y="805" class="label" text-anchor="middle">eBPF/PCAP data)</text>
+
+  <rect x="465" y="610" width="240" height="170" class="dark-panel"/>
+  <text x="585" y="675" text-anchor="middle" class="dark">Collects network</text>
+  <text x="585" y="715" text-anchor="middle" class="dark">flow data using</text>
+  <text x="585" y="755" text-anchor="middle" class="dark">eBPF probes</text>
+
+  <rect x="780" y="610" width="260" height="170" class="light-panel"/>
+  <text x="910" y="685" text-anchor="middle" class="label">Adds context</text>
+  <text x="910" y="725" text-anchor="middle" class="label">(e.g., source/dest</text>
+  <text x="910" y="765" text-anchor="middle" class="label">IP, process info)</text>
+
+  <rect x="1120" y="610" width="260" height="170" class="light-panel"/>
+  <text x="1250" y="680" text-anchor="middle" class="label">Enriched and</text>
+  <text x="1250" y="720" text-anchor="middle" class="label">indexed flow</text>
+  <text x="1250" y="760" text-anchor="middle" class="label">records</text>
+
+  <rect x="1510" y="610" width="320" height="170" class="dark-panel"/>
+  <text x="1670" y="670" text-anchor="middle" class="dark">Complex event</text>
+  <text x="1670" y="710" text-anchor="middle" class="dark">processing</text>
+  <text x="1670" y="750" text-anchor="middle" class="dark">Matches flows against</text>
+  <text x="1670" y="790" text-anchor="middle" class="dark">rulesets (IoCs)</text>
+
+  <rect x="1525" y="420" width="325" height="140" class="dark-panel"/>
+  <text x="1687" y="488" text-anchor="middle" class="dark">Queries for anomalies</text>
+
+  <rect x="1460" y="785" width="310" height="95" class="badge"/>
+  <text x="1615" y="845" text-anchor="middle" class="label">Optional ML for</text>
+  <text x="1615" y="875" text-anchor="middle" class="label">Behavioural Anomaly</text>
+
+  <path d="M 310 420 L 520 420" class="connector"/>
+  <path d="M 830 420 L 820 420" class="connector"/>
+  <path d="M 1235 420 L 1465 420" class="connector"/>
+  <path d="M 1655 560 L 1655 610" class="connector"/>
+  <path d="M 1685 610 L 1685 420" class="connector"/>
+
+  <text x="1860" y="104" class="label" text-anchor="middle">Deepfence Management</text>
+  <text x="1860" y="154" class="label" text-anchor="middle">System</text>
+
+  <path d="M 2010 420 L 2010 730" class="connector"/>
+
+  <text x="510" y="505" class="small">Adds context</text>
+  <text x="705" y="505" class="small">Enriched and</text>
+  <text x="705" y="545" class="small">indexed flow</text>
+  <text x="705" y="585" class="small">records</text>
+
+  <text x="1830" y="655" class="small" text-anchor="middle">Stores logs and</text>
+  <text x="1830" y="700" class="small" text-anchor="middle">system state</text>
+  <text x="1830" y="745" class="small" text-anchor="middle">Alert history</text>
+  <text x="1830" y="790" class="small" text-anchor="middle">Policy repository</text>
+
+</svg>

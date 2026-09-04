@@ -15,7 +15,7 @@ Deepfence Flowwatcher categorizes packets into flows and shows a rich ensemble o
 
 ## Architecture
 
-| ![Deepfence Flowwatcher Architecture](img/flowmeter-architecture.png) |
+| ![Deepfence Flowwatcher Architecture](img/flowmeter-architecture.svg) |
 | :--: | 
 | *Deepfence Flowwatcher takes packets and returns file with statistics of flows.* |
 
