@@ -46,7 +46,15 @@ Thank you for using Deepfence Flowwatcher.
 - [<img src="https://img.shields.io/badge/documentation-read-green">](https://docs.deepfence.io/flowmeter) Start with the documentation
 - [## Architecture
 
-![FlowWatcher Architecture](./FlowWatcher-architecture.png)https://gemini.google.com/85b98a9c-5c6e-4be6-af25-fa7e982ed6d9Got a question, need some help? Find the Deepfence team on Slack
+![FlowWatcher Architecture](## FlowWatcher Architecture
+
+### 1. System Architecture
+
+![FlowWatcher System Architecture](./FlowWatcher-architecture-1.png)
+
+### 2. Analysis Engine Architecture
+
+![FlowWatcher Analysis Engine](./FlowWatcher-architecture-2.png)Got a question, need some help? Find the Deepfence team on Slack
 - [![GitHub issues](https://img.shields.io/github/issues/deepfence/FlowMeter)](https://github.com/deepfence/FlowMeter/issues) Got a feature request or found a bug? Raise an issue
 - [productsecurity _at_ deepfence _dot_ io](SECURITY.md): Found a security issue? Share it in confidence
 - Find out more at [deepfence.io](https://deepfence.io/)
