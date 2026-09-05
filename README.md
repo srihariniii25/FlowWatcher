@@ -17,30 +17,14 @@ Deepfence Flowwatcher aims to:
 
 Additionally, Deepfence Flowwatcher also categorizes packets into flows and shows a rich ensemble of flow data and statistics.
 
-| -## Architecture
 ## Architecture
 
-### 1. System Architecture
-
-![FlowWatcher System Architecture](./FlowWatcher-architecture-1.png)
 
 ### 2. Analysis Engine
 
 ![FlowWatcher Analysis Engine](./FlowWatcher-architecture-2.png)
-| :--------------------------------------------------------------------------------------------------------------------------------------------------: |
-|  ![FlowWatcher Architecture](## FlowWatcher Architecture
-
-### 1. System Architecture
-
-
-
-![FlowWatcher Analysis Engine](./FlowWatcher-architecture-2.png)                                       _Deepfence Flowwatcher takes packets and returns file with statistics of flows._                                         |
-
-|:--:|
-| _Deepfence Flowwatcher takes packets and returns file with statistics of flows and classifies packets as benign or malicious._ |
 
 ## When to use Deepfence Flowwatcher
-
 Use Deepfence Flowwatcher if you wish to build and operate machine-learning models on network packet data.
 
 ## Quick Start
@@ -55,35 +39,8 @@ For full instructions, refer to the [Deepfence Flowwatcher Documentation](https:
 ## Get in touch
 
 Thank you for using Deepfence Flowwatcher.
+Got a question, need some help? Find the Deepfence team on Slack
 
-
--## Architecture
-## Architecture
-
-### 1. System Architecture
-
-![FlowWatcher System Architecture](./FlowWatcher-architecture-1.png)
-
-### 2. Analysis Engine
-
-![FlowWatcher Analysis Engine](./FlowWatcher-architecture-2.png)
-
-### 1. System Architecture
-
-![FlowWatcher System Architecture](./FlowWatcher-architecture-1.png)
-
-### 2. Analysis Engine Architecture
-
-![FlowWatcher Analysis Engine](./FlowWatcher-architecture-2.png)
-
-![FlowWatcher Architecture](## FlowWatcher Architecture
-
-### 1. System Architecture
-
-
-
-![FlowWatcher Analysis Engine](./FlowWatcher-architecture-2.png)Got a question, need some help? Find the Deepfence team on Slack
-[![GitHub issues](https://img.shields.io/github/issues/srihariniii25/FlowWatcher)](https://github.com/srihariniii25/FlowWatcher/issues)
 - [productsecurity _at_ deepfence _dot_ io](SECURITY.md): Found a security issue? Share it in confidence
 - Find out more at [deepfence.io](https://deepfence.io/)
 
@@ -98,5 +55,3 @@ Please file GitHub issues as needed, and join the Deepfence Community [Slack cha
 The Deepfence Flowwatcher project (this repository) is offered under the [Apache2 license](https://www.apache.org/licenses/LICENSE-2.0).
 
 [Contributions](CONTRIBUTING.md) to the Deepfence Flowwatcher project are similarly accepted under the Apache2 license, as per [GitHub's inbound=outbound policy](https://docs.github.com/en/github/site-policy/github-terms-of-service#6-contributions-under-repository-license).
-
-Updated readme file
