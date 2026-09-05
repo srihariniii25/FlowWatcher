@@ -19,6 +19,12 @@ Additionally, Deepfence Flowwatcher also categorizes packets into flows and show
 
 ## Architecture
 
+## FlowWatcher Architecture
+
+### 1. System Architecture
+
+![FlowWatcher System Architecture](./FlowWatcher-architecture-1.png)
+
 
 ### 2. Analysis Engine
 
