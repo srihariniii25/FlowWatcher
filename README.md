@@ -35,20 +35,20 @@ Use Deepfence Flowwatcher if you wish to build and operate machine-learning mode
 
 ## Quick Start
 
-For full instructions, refer to the [Deepfence Flowwatcher Documentation](https://docs.deepfence.io/flowmeter).
+For full instructions, refer to the [Flowwatcher Documentation](https://flowmeter).
 
 
 ## Who uses Flowwatcher?
 
-- We use Deepfence Flowwatcher internally to quickly analyse and label packets. It forms one part of a project to build a fast pre-filter for packets before we conduct deeper layer-7 analysis in [Deepfence ThreatMapper](https://deepfence.io/threatmapper/).
+- We use Flowwatcher internally to quickly analyse and label packets. It forms one part of a project to build a fast pre-filter for packets before we conduct deeper layer-7 analysis in [ThreatMapper](https://deepfence.io/threatmapper/).
 
 ## Get in touch
 
-Thank you for using Deepfence Flowwatcher.
+Thank you for using Flowwatcher.
 Got a question, need some help? Find the Deepfence team on Slack
 
 - [productsecurity _at_ deepfence _dot_ io](SECURITY.md): Found a security issue? Share it in confidence
-- Find out more at [deepfence.io](https://deepfence.io/)
+- 
 
 ## Security and Support
 
