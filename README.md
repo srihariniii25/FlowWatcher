@@ -45,19 +45,19 @@ For full instructions, refer to the [Flowwatcher Documentation](https://flowmete
 ## Get in touch
 
 Thank you for using Flowwatcher.
-Got a question, need some help? Find the Deepfence team on Slack
+Got a question, need some help? Find the team on Slack
 
-- [productsecurity _at_ deepfence _dot_ io](SECURITY.md): Found a security issue? Share it in confidence
-- 
+- [productsecurity _at__dot_ io](SECURITY.md): Found a security issue? Share it in confidence
+  
 
 ## Security and Support
 
-For any security-related issues in the Deepfence Flowwatcher project, contact [productsecurity _at_ deepfence _dot_ io](SECURITY.md).
+For any security-related issues in the Flowwatcher project, contact [productsecurity _at_ deepfence _dot_ io](SECURITY.md).
 
 Please file GitHub issues as needed, and join the Deepfence Community [Slack channel](https://join.slack.com/t/deepfence-community/shared_invite/zt-podmzle9-5X~qYx8wMaLt9bGWwkSdgQ).
 
 ## License
 
-The Deepfence Flowwatcher project (this repository) is offered under the [Apache2 license](https://www.apache.org/licenses/LICENSE-2.0).
+The Flowwatcher project (this repository) is offered under the [Apache2 license](https://www.apache.org/licenses/LICENSE-2.0).
 
 [Contributions](CONTRIBUTING.md) to the Deepfence Flowwatcher project are similarly accepted under the Apache2 license, as per [GitHub's inbound=outbound policy](https://docs.github.com/en/github/site-policy/github-terms-of-service#6-contributions-under-repository-license).
