@@ -30,7 +30,7 @@ Additionally, Deepfence Flowwatcher also categorizes packets into flows and show
 
 ![FlowWatcher Analysis Engine](./FlowWatcher-architecture-2.png)
 
-## When to use Deepfence Flowwatcher
+## When to use Flowwatcher
 Use Deepfence Flowwatcher if you wish to build and operate machine-learning models on network packet data.
 
 ## Quick Start
@@ -38,7 +38,7 @@ Use Deepfence Flowwatcher if you wish to build and operate machine-learning mode
 For full instructions, refer to the [Deepfence Flowwatcher Documentation](https://docs.deepfence.io/flowmeter).
 
 
-## Who uses Deepfence Flowwatcher?
+## Who uses Flowwatcher?
 
 - We use Deepfence Flowwatcher internally to quickly analyse and label packets. It forms one part of a project to build a fast pre-filter for packets before we conduct deeper layer-7 analysis in [Deepfence ThreatMapper](https://deepfence.io/threatmapper/).
 
