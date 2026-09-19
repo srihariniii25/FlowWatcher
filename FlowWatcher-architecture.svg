@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
-  <title id="title">FlowWatcher: Architecture for Network Observability and Threat Detection</title>
-  <desc id="desc">FlowWatcher collects network traffic, builds flows, performs behavioral analysis, and integrates with a management console and automated action API.</desc>
+  <title id="title">FlowWatcher - Workflow</title>
+  <desc id="desc">FlowWatcher collects network traffic, builds flows, performs behavioral analysis, and integrates with a console and automated action API.</desc>
   <defs>
     <linearGradient id="header" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#dff5ff"/><stop offset="1" stop-color="#c7e6ff"/>
@@ -19,8 +19,8 @@
   </defs>
   <rect width="1200" height="760" fill="#fff"/>
   <rect x="170" y="28" width="860" height="110" rx="16" fill="url(#header)" stroke="#35a8ef" stroke-width="3" filter="url(#shadow)"/>
-  <text x="600" y="70" text-anchor="middle" class="title">FlowWatcher: Architecture for Network</text>
-  <text x="600" y="105" text-anchor="middle" class="title">Observability and Threat Detection</text>
+  <text x="600" y="70" text-anchor="middle" class="title">FlowWatcher - Workflow</text>
+  <text x="600" y="105" text-anchor="middle" class="subtitle">(End-to-End Process)</text>
 
   <rect x="18" y="166" width="220" height="408" rx="12" fill="#edf7ff" stroke="#35a8ef" stroke-width="3"/>
   <circle cx="48" cy="194" r="25" fill="#1685d5"/><text x="48" y="203" class="number">1</text>
