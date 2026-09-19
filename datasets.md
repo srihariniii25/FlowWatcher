@@ -2,29 +2,29 @@
 title: Datasets
 ---
 
-# Deepfence Flowwatcher Datasets
+# FlowWatcher Datasets
 
-Deepfence Flowwatcher uses takes packets as input, derives a rich set of features, constructs flows on the basis of these features and uses machine learning to classify the ensuing flows as malicious or benign.
+FlowWatcher takes packets as input, derives a rich set of features, constructs flows on the basis of these features and uses machine learning to classify the ensuing flows as malicious or benign.
 
-Deepfence Flowwatcher can process live packets or can analyze offline packets.
+FlowWatcher can process live packets or can analyze offline packets.
 
 The tests in the repo used the following sample packet datasets:
 
 ### Benign Packets
 
 ```bash
-wget https://deepfence-public.s3.amazonaws.com/pcap-datasets/benign_2017-05-02_kali-normal22.pcap
+# Place a benign packet capture in this directory.
 ```
 
 ### Malicious Packets
 
 ```bash 
-wget https://deepfence-public.s3.amazonaws.com/pcap-datasets/webgoat.pcap
+# Place a malicious packet capture in this directory.
 ```    
 
 ## Other Datasets
 
-Additionally, one can also use sample data from various sources like the datasets mentioned below, or gather packet captures using [PacketStreamer](https://github.com/deepfence/PacketStreamer) or other pcap tools.
+Additionally, one can use sample data from the sources mentioned below or gather packet captures using any compatible pcap tool.
 
  * **Benign:** 
     * [Canadian Institute of Cybersecurity](https://www.unb.ca/cic/datasets/)

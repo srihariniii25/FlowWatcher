@@ -6,14 +6,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Deepfence Flowwatcher',
+  title: 'FlowWatcher',
   tagline: 'Use ML to classify flows and packets as benign or malicious',
   url: 'https://flowmeter.local',
   baseUrl: '/',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
-  favicon: '/img/deepfence.png',
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -30,10 +29,8 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/deepfence/FlowMeter/docs/',
+            'https://github.com/srihariniii25/FlowWatcher/tree/main/',
           breadcrumbs: true,
           routeBasePath: '/',
           // options for remark-admonitions
@@ -41,7 +38,6 @@ const config = {
         },
         blog: false,
         theme: {
-          customCss: require.resolve('./static/css/deepfence.css'),
         },
       }),
     ],
@@ -54,23 +50,16 @@ const config = {
         hideOnScroll: false,
         title: '',
         logo: {
-          alt: 'Deepfence',
-          src: '/img/deepfence-logo-black.svg',
-          srcDark: '/img/deepfence-logo-white.svg',
+          alt: 'FlowWatcher',
         },
         items: [
           {
             type: 'doc',
             docId: 'flowmeter/index',
-            label: 'Deepfence Flowwatcher Documentation',
-          },
-          { 
-            to: 'https://deepfence.io/',
-            label: 'deepfence.io',
-            position: 'right',
+            label: 'FlowWatcher Documentation',
           },
           {
-            href: 'https://github.com/deepfence',
+            href: 'https://github.com/srihariniii25/FlowWatcher',
             label: 'GitHub',
             position: 'right',
           },
@@ -79,12 +68,9 @@ const config = {
       footer: {
         style: 'dark',
         logo: {
-          alt: 'Deepfence, Inc',
-          src: '/img/deepfence-logo-white.svg',
-          width: 160,
-          height: 51,
+          alt: 'FlowWatcher',
         },
-        copyright: `Copyright © ${new Date().getFullYear()} Deepfence, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} FlowWatcher. Built with Docusaurus.`,
       },
       colorMode: {
         defaultMode: 'light',

@@ -7,8 +7,9 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/deepfence/FlowMeter/pkg/constants"
-	"github.com/deepfence/FlowMeter/pkg/packetAnalyzer"
+	"github.com/srihariniii25/FlowWatcher/pkg/constants"
+	"github.com/srihariniii25/FlowWatcher/pkg/packetAnalyzer"
+
 	"github.com/google/gopacket"
 	"github.com/google/gopacket/pcap"
 

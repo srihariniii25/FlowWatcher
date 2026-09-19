@@ -1,3 +1,3 @@
-Please report any potential security vulnerabilities to **productsecurity *at* deepfence *dot* io**. 
+Please report any potential security vulnerabilities privately through the repository owner or GitHub security advisories.
 
-Deepfence will endeavour to respond within 3 working days, and treats all security notifications in full confidence.
+Please include the affected version, reproduction steps, and impact. Do not disclose the issue publicly until it has been addressed.

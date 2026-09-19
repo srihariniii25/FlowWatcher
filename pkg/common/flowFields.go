@@ -3,7 +3,7 @@ package common
 import (
 	"time"
 
-	"github.com/deepfence/FlowMeter/pkg/constants"
+	"github.com/srihariniii25/FlowWatcher/pkg/constants"
 )
 
 type FlowFeatures struct {

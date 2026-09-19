@@ -1,63 +1,40 @@
-[![Documentation](https://img.shields.io/badge/documentation-read-green)](https://docs.deepfence.io/flowmeter)
 [![GitHub license](https://img.shields.io/github/license/srihariniii25/FlowWatcher)](https://github.com/srihariniii25/FlowWatcher/blob/main/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/srihariniii25/FlowWatcher)](https://github.com/srihariniii25/FlowWatcher/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/srihariniii25/FlowWatcher)](https://github.com/srihariniii25/FlowWatcher/issues)
-[![Slack](https://img.shields.io/badge/slack-@deepfence-blue.svg?logo=slack)](https://join.slack.com/t/deepfence-community/shared_invite/zt-podmzle9-5X~qYx8wMaLt9bGWwkSdgQ)
 
 # FlowWatcher
 
-Deepfence Flowwatcher is an experimental utility built for analysing and classifing packets by looking at packet headers.
+FlowWatcher is an experimental utility built for analysing and classifying packets by looking at packet headers.
 
 ## Primary design goals:
 
-Deepfence Flowwatcher aims to:
+FlowWatcher aims to:
 
 - **Classify packets and flows as benign or malicious with high true positives (TP) and low false positives (FP)**.
 - **Use the labeled data to reduce amount of traffic requiring deeper analysis**.
 
-Additionally, Deepfence Flowwatcher also categorizes packets into flows and shows a rich ensemble of flow data and statistics.
+Additionally, FlowWatcher categorizes packets into flows and shows a rich ensemble of flow data and statistics.
 
 ## Architecture
 
-## FlowWatcher Architecture
+### Architecture
 
-### 1. System Architecture
+![FlowWatcher Architecture](./FlowWatcher-architecture.svg)
 
-![FlowWatcher System Architecture](./FlowWatcher-architecture-1.png)
-
-
-### 2. Analysis Engine
-
-![FlowWatcher Analysis Engine](./FlowWatcher-architecture-2.png)
-
-## When to use Flowwatcher
-Use Deepfence Flowwatcher if you wish to build and operate machine-learning models on network packet data.
+## When to use FlowWatcher
+Use FlowWatcher if you wish to build and operate machine-learning models on network packet data.
 
 ## Quick Start
 
-For full instructions, refer to the [Flowwatcher Documentation](https://flowmeter).
+For full instructions, refer to the [project documentation](quickstart.md).
 
-
-## Who uses Flowwatcher?
-
-- We use Flowwatcher internally to quickly analyse and label packets. It forms one part of a project to build a fast pre-filter for packets before we conduct deeper layer-7 analysis in [ThreatMapper](https://deepfence.io/threatmapper/).
-
-## Get in touch
-
-Thank you for using Flowwatcher.
-Got a question, need some help? Find the team on Slack
-
-- [productsecurity _at__dot_ io](SECURITY.md): Found a security issue? Share it in confidence
-  
 
 ## Security and Support
 
-For any security-related issues in the Flowwatcher project, contact [productsecurity _at_ deepfence _dot_ io](SECURITY.md).
-
-Please file GitHub issues as needed, and join the Deepfence Community [Slack channel](https://join.slack.com/t/deepfence-community/shared_invite/zt-podmzle9-5X~qYx8wMaLt9bGWwkSdgQ).
+Please file security reports and support questions through the repository's GitHub issue tracker.
 
 ## License
 
-The Flowwatcher project (this repository) is offered under the [Apache2 license](https://www.apache.org/licenses/LICENSE-2.0).
+The FlowWatcher project is offered under the [Apache2 license](https://www.apache.org/licenses/LICENSE-2.0).
 
-[Contributions](CONTRIBUTING.md) to the Deepfence Flowwatcher project are similarly accepted under the Apache2 license, as per [GitHub's inbound=outbound policy](https://docs.github.com/en/github/site-policy/github-terms-of-service#6-contributions-under-repository-license).
+[Contributions](CONTRIBUTING.md) to the FlowWatcher project are similarly accepted under the Apache2 license, as per [GitHub's inbound=outbound policy](https://docs.github.com/en/github/site-policy/github-terms-of-service#6-contributions-under-repository-license).

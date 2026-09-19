@@ -1,18 +1,18 @@
 ---
-title: 'Deepfence Flowwatcher QuickStart'
+title: 'FlowWatcher QuickStart'
 ---
 
 # Quick Start
 
-![Deepfence Flowwatcher Demo](img/flowmeter.svg)
+![FlowWatcher Demo](img/flowmeter-results-anim.gif)
 
-## Build Deepfence Flowwatcher
+## Build FlowWatcher
 
-Build Deepfence Flowwatcher from source using the golang toolchain.
+Build FlowWatcher from source using the golang toolchain.
 
 ```bash
-git clone https://github.com/deepfence/FlowMeter.git
-cd FlowMeter
+git clone https://github.com/srihariniii25/FlowWatcher.git
+cd FlowWatcher
 
 # Install libpcap package.
 # Ubuntu/Debian:  sudo apt-get install libpcap0.8-dev
@@ -31,8 +31,7 @@ go build cmd/flowmeter.go
 # Download pcap files.
 mkdir packets
 
-wget https://deepfence-public.s3.amazonaws.com/pcap-datasets/webgoat.pcap -P packets
-wget https://deepfence-public.s3.amazonaws.com/pcap-datasets/benign_2017-05-02_kali-normal22.pcap -P packets
+# Place webgoat.pcap and benign_2017-05-02_kali-normal22.pcap in packets/
 
 # Generate CSVs for flows
 ./flowmeter -ifLiveCapture=false -fname=webgoat -maxNumPackets=40000000 -ifLocalIPKnown false
@@ -42,9 +41,9 @@ wget https://deepfence-public.s3.amazonaws.com/pcap-datasets/benign_2017-05-02_k
 ## Generate ML parameters and classify packets:
 
 ```bash
-cd FlowMeter/assets
+cd FlowWatcher
 
-python Deepfence_ML_flowmeter.py
+python ML_flowmeter.py
 
 cd ../pkg/
 
@@ -54,10 +53,10 @@ cd ../pkg/
 
 ## Sample Results
 
-Deepfence Flowwatcher gives a rich set of features about flows from packet data, and classifies packets as benign or malicious.
+FlowWatcher gives a rich set of features about flows from packet data, and classifies packets as benign or malicious.
 
-| ![Deepfence Flowwatcher Results](img/flowmeter-results-anim.gif) |
+| ![FlowWatcher Results](img/flowmeter-results-anim.gif) |
 | :--: |
-| *Deepfence Flowwatcher takes packets and returns file with statistics of flows.* |
+| *FlowWatcher takes packets and returns file with statistics of flows.* |
 
 

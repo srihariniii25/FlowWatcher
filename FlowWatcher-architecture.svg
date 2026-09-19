@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">FlowWatcher: Architecture for Network Observability and Threat Detection</title>
+  <desc id="desc">FlowWatcher collects network traffic, builds flows, performs behavioral analysis, and integrates with a management console and automated action API.</desc>
+  <defs>
+    <linearGradient id="header" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#dff5ff"/><stop offset="1" stop-color="#c7e6ff"/>
+    </linearGradient>
+    <linearGradient id="engine" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#185b96"/><stop offset="1" stop-color="#123b6b"/>
+    </linearGradient>
+    <linearGradient id="data" x1="0" x2="1"><stop stop-color="#d9fff0"/><stop offset="1" stop-color="#b7f0db"/></linearGradient>
+    <linearGradient id="analysis" x1="0" x2="1"><stop stop-color="#eeeaff"/><stop offset="1" stop-color="#d9d0ff"/></linearGradient>
+    <linearGradient id="policy" x1="0" x2="1"><stop stop-color="#fff0df"/><stop offset="1" stop-color="#ffdcb9"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-opacity=".18"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#0e5c83"/></marker>
+    <style>
+      .title{font:700 34px Arial,sans-serif;fill:#092b5c}.subtitle{font:italic 20px Arial,sans-serif;fill:#123d70}.section{font:700 21px Arial,sans-serif;fill:#092b5c}.body{font:18px Arial,sans-serif;fill:#12335d}.small{font:16px Arial,sans-serif;fill:#12335d}.white{fill:#fff}.number{font:700 25px Arial,sans-serif;fill:#fff;text-anchor:middle}.label{font:700 18px Arial,sans-serif;fill:#092b5c;text-anchor:middle}
+    </style>
+  </defs>
+  <rect width="1200" height="760" fill="#fff"/>
+  <rect x="170" y="28" width="860" height="110" rx="16" fill="url(#header)" stroke="#35a8ef" stroke-width="3" filter="url(#shadow)"/>
+  <text x="600" y="70" text-anchor="middle" class="title">FlowWatcher: Architecture for Network</text>
+  <text x="600" y="105" text-anchor="middle" class="title">Observability and Threat Detection</text>
+
+  <rect x="18" y="166" width="220" height="408" rx="12" fill="#edf7ff" stroke="#35a8ef" stroke-width="3"/>
+  <circle cx="48" cy="194" r="25" fill="#1685d5"/><text x="48" y="203" class="number">1</text>
+  <text x="142" y="203" class="section" text-anchor="middle">Data Collection</text>
+  <rect x="38" y="226" width="180" height="96" rx="10" fill="#fff" stroke="#7ec8fa" stroke-width="2"/>
+  <circle cx="128" cy="255" r="18" fill="#3b79cf"/><path d="M118 255h20M128 245v20" stroke="#fff" stroke-width="4"/>
+  <text x="128" y="290" class="label">Network Traffic</text><text x="128" y="312" class="small" text-anchor="middle">Packets</text>
+  <rect x="38" y="340" width="180" height="88" rx="10" fill="#fff" stroke="#7ec8fa" stroke-width="2"/>
+  <ellipse cx="128" cy="365" rx="30" ry="10" fill="#6b8ee8"/><path d="M98 365v27c0 6 13 12 30 12s30-6 30-12v-27" fill="#516fca" stroke="#294d9d" stroke-width="2"/><text x="128" y="414" class="label">Distributed Probes</text>
+  <rect x="38" y="446" width="180" height="96" rx="10" fill="#fff" stroke="#7ec8fa" stroke-width="2"/>
+  <rect x="88" y="465" width="80" height="18" rx="4" fill="#3f6fc0"/><rect x="88" y="490" width="80" height="18" rx="4" fill="#3f6fc0"/><circle cx="101" cy="474" r="3" fill="#b9f5df"/><circle cx="101" cy="499" r="3" fill="#b9f5df"/><text x="128" y="530" class="label">Logs &amp; Metrics</text>
+
+  <rect x="265" y="166" width="670" height="408" rx="12" fill="url(#engine)" stroke="#164e83" stroke-width="3" filter="url(#shadow)"/>
+  <circle cx="300" cy="194" r="25" fill="#1685d5"/><text x="300" y="203" class="number">2</text>
+  <text x="600" y="203" class="section white" text-anchor="middle">FlowWatcher Analysis Engine</text>
+  <rect x="286" y="226" width="190" height="310" rx="10" fill="url(#data)" stroke="#00a77c" stroke-width="2"/>
+  <text x="381" y="260" class="label">Data Ingestion &amp;</text><text x="381" y="284" class="label">Flow Building</text>
+  <text x="307" y="330" class="body">&#8226; Assemble flows</text><text x="307" y="356" class="body">  from packets</text><text x="307" y="382" class="body">&#8226; Add context</text><text x="307" y="408" class="body">  and metadata</text><text x="307" y="450" class="body">&#8226; Correlate logs</text>
+  <rect x="500" y="226" width="190" height="310" rx="10" fill="url(#analysis)" stroke="#7364d9" stroke-width="2"/>
+  <text x="595" y="260" class="label">AI &amp; Behavioral</text><text x="595" y="284" class="label">Analysis</text>
+  <circle cx="595" cy="344" r="36" fill="#6848a7"/><path d="M578 344c8-22 34-22 42 0-8 22-34 22-42 0z" fill="none" stroke="#fff" stroke-width="4"/><path d="M595 318v52M574 334h42M574 354h42" stroke="#fff" stroke-width="2"/><text x="530" y="420" class="body">&#8226; Train models</text><text x="530" y="449" class="body">&#8226; Analyze patterns</text><text x="530" y="478" class="body">&#8226; Detect anomalies</text>
+  <rect x="714" y="226" width="190" height="310" rx="10" fill="url(#policy)" stroke="#ee7615" stroke-width="2"/>
+  <text x="809" y="260" class="label">Policy Engine &amp;</text><text x="809" y="284" class="label">Response</text><circle cx="809" cy="344" r="36" fill="#f36c22"/><path d="M809 318l22 9v17c0 16-11 27-22 33-11-6-22-17-22-33v-17z" fill="none" stroke="#fff" stroke-width="4"/><text x="738" y="420" class="body">&#8226; Analyze threats</text><text x="738" y="449" class="body">&#8226; Create actions</text><text x="738" y="478" class="body">&#8226; Orchestrate response</text>
+
+  <rect x="962" y="166" width="220" height="408" rx="12" fill="#f4f0ff" stroke="#7565dc" stroke-width="3"/>
+  <circle cx="1012" cy="194" r="25" fill="#6848c5"/><text x="1012" y="203" class="number">3</text>
+  <text x="1090" y="196" class="section" text-anchor="middle">Console &amp; API</text><text x="1090" y="221" class="section" text-anchor="middle">Integration</text>
+  <rect x="982" y="246" width="180" height="116" rx="10" fill="#fff" stroke="#a89ce9" stroke-width="2"/><rect x="1010" y="270" width="124" height="58" rx="5" fill="#dceaff" stroke="#3566a3" stroke-width="3"/><path d="M1024 313l18-17 15 10 18-24 24 25" fill="none" stroke="#398ac7" stroke-width="5"/><text x="1072" y="349" class="small" text-anchor="middle">Dashboard</text>
+  <rect x="982" y="382" width="180" height="116" rx="10" fill="#fff" stroke="#a89ce9" stroke-width="2"/><rect x="1030" y="404" width="84" height="54" rx="12" fill="#398ac7"/><path d="M1050 438l12-12 12 12 12-12 12 12" fill="none" stroke="#fff" stroke-width="4"/><text x="1072" y="483" class="small" text-anchor="middle">Action API</text>
+  <path d="M238 365h40" stroke="#0e5c83" stroke-width="6" marker-end="url(#arrow)"/><path d="M935 365h27" stroke="#0e5c83" stroke-width="6" marker-end="url(#arrow)"/>
+  <rect x="220" y="632" width="760" height="82" rx="12" fill="#effff7" stroke="#18ad72" stroke-width="3"/><circle cx="505" cy="673" r="24" fill="#1c8f85"/><path d="M494 676c4-12 23-12 27 0" fill="none" stroke="#fff" stroke-width="4"/><text x="620" y="678" class="title" font-size="28">FlowWatcher</text><text x="600" y="702" class="subtitle" text-anchor="middle">Continuous traffic analysis</text>
+</svg>

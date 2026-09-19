@@ -16,11 +16,11 @@ const sidebars = {
   flowmeter: [
     {
       type: 'html',
-      value: 'Deepfence Flowwatcher',
+      value: 'FlowWatcher',
       className: 'sidebar-title',
     },    
   
-    "flowmeter/index",
+      value: 'FlowWatcher',
     'flowmeter/quickstart',
 
     {
