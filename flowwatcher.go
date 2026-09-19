@@ -62,7 +62,7 @@ func main() {
 		log.Fatal(constants.Err)
 	}
 
-	go packetAnalyzer.FlowMeter(ctx, ch, cancel, maxNumPackets, localIP, ifLocalIPKnown, filename)
+	go packetAnalyzer.FlowWatcher(ctx, ch, cancel, maxNumPackets, localIP, ifLocalIPKnown, filename)
 
 	defer constants.Handle.Close()
 

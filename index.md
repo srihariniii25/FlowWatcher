@@ -15,12 +15,12 @@ FlowWatcher categorizes packets into flows and shows a rich ensemble of flow dat
 
 ## Architecture
 
-| ![FlowWatcher Architecture](img/flowmeter-architecture.svg) |
-| :--: | 
+| ![FlowWatcher Architecture](./FlowWatcher-architecture.svg) |
+| :--: |
 | *FlowWatcher takes packets and returns file with statistics of flows.* |
 
 
-| ![FlowWatcher Classification](img/flowmeter-classification.png) |
+| ![FlowWatcher Classification](./FlowWatcher-network-architecture.svg) |
 | :--: |
 | *FlowWatcher takes packets and returns file with statistics of flows and classifies packets as benign or malicious.* |
 

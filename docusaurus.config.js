@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'FlowWatcher',
   tagline: 'Use ML to classify flows and packets as benign or malicious',
-  url: 'https://flowmeter.local',
+  url: 'https://flowwatcher.local',
   baseUrl: '/',
 
   onBrokenLinks: 'throw',
@@ -55,7 +55,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'flowmeter/index',
+            docId: 'index',
             label: 'FlowWatcher Documentation',
           },
           {

@@ -13,22 +13,21 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  flowmeter: [
+  flowwatcher: [
     {
       type: 'html',
       value: 'FlowWatcher',
       className: 'sidebar-title',
-    },    
-  
-      value: 'FlowWatcher',
-    'flowmeter/quickstart',
+    },
+    'index',
+    'quickstart',
 
     {
       type: 'category',
       label: 'Advanced Usage',
       items: [
-        'flowmeter/using/datasets',
-        'flowmeter/using/analysis',
+        'datasets',
+        'analysis',
       ],
     },
   ],

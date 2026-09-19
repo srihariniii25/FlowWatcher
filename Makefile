@@ -1,4 +1,4 @@
 .PHONY: all
 
-flowmeter:
-	go build ./cmd/flowmeter.go
+flowwatcher:
+	go build .

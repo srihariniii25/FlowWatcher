@@ -16,7 +16,7 @@ import (
 )
 
 // This go routine communicates through channels and computes flow stats
-func FlowMeter(ctx context.Context, ch chan gopacket.Packet, cancel context.CancelFunc, maxNumPackets int, localIP string, ifLocalIPKnown bool, fname string) error {
+func FlowWatcher(ctx context.Context, ch chan gopacket.Packet, cancel context.CancelFunc, maxNumPackets int, localIP string, ifLocalIPKnown bool, fname string) error {
 	flowDict := make(map[string]constants.FlowData)
 	flowSave := make(map[string]common.FlowFeatures)
 
