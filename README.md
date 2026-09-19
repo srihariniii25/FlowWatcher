@@ -4,9 +4,9 @@
 
 # FlowWatcher
 
-![FlowWatcher Network Architecture](./FlowWatcher-network-architecture.svg)
-
 ![FlowWatcher Workflow](./FlowWatcher-architecture.svg)
+
+![FlowWatcher Network Architecture](./FlowWatcher-network-architecture.svg)
 
 FlowWatcher is an experimental utility built for analysing and classifying packets by looking at packet headers.
 
